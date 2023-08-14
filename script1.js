@@ -191,6 +191,7 @@ function buttonfunc3() {  //instructions for the work button
 
 }
 
+
 function buttonfunc2() { //instructions for the bank button
 
     console.log("button3 is pressed")
@@ -218,6 +219,8 @@ function buttonfunc2() { //instructions for the bank button
 
     if (loan<=0){
         balance -= loan
+        loan = 0
+        elbalance.innerHTML = toNOK(balance)
         youHaveALoan = 0
         isLoanTrue(0)
 
